@@ -11,13 +11,13 @@ public abstract class Piece {
 		position = null;
 		
 	}
-	protected Board getBoard() {
+	protected Board getBoard(){
 		return board;
 	}
 	
 	public abstract boolean[][] possibleMoves();
 	
-	public boolean possibleMoves (Position position) {
+	public boolean possibleMove(Position position) {
 	 return possibleMoves()[position.getRow()][position.getColumn()];
 	}
 	public boolean isThereAnyPossibleMove(){
